@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'sentiment',
     'drf_yasg',
+    'rest_framework.authtoken',
 
 ]
 
@@ -50,6 +51,13 @@ SWAGGER_SETTINGS = {
     'DEFAULT_INFO': 'your_project.urls.swagger_info',  # Replace with your project's URL configuration
     'DEFAULT_AUTO_SCHEMA_CLASS': 'drf_yasg.inspectors.SwaggerAutoSchema',
 }
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

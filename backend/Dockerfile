@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Use the official Python base image
-FROM bitnami/pytorch-intel:1.12.300-debian-11-r19
+FROM pytorch/pytorch:latest
 ENV PYTHONUNBUFFERED 1
 # Set the working directory in the container
 WORKDIR /app
