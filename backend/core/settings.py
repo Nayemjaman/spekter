@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #other apps
+    # other apps
     'rest_framework',
     'sentiment',
     'drf_yasg',
@@ -48,7 +48,8 @@ INSTALLED_APPS = [
 
 
 SWAGGER_SETTINGS = {
-    'DEFAULT_INFO': 'your_project.urls.swagger_info',  # Replace with your project's URL configuration
+    # Replace with your project's URL configuration
+    'DEFAULT_INFO': 'your_project.urls.swagger_info',
     'DEFAULT_AUTO_SCHEMA_CLASS': 'drf_yasg.inspectors.SwaggerAutoSchema',
 }
 REST_FRAMEWORK = {
@@ -140,6 +141,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
